@@ -11,6 +11,8 @@ Users will select, customize or create their own agile board (i.e Sprint Retro) 
 
 ![Workflow](images/workflow.PNG)
 
+Image processing and text recognition scripts can be found [here](backend/src/scripts)
+
 ### How we built it
 The image processing and deep learning is all done in Python with OpenCV and Tensorflow. The neural network consists of 5 CNN layers that feed into 2 RNN cells to extract text from the feature images. The backend is built using node.js and express paired with postgreSQL and knex.js. Web application is built using Vue.js and Google Cloud Buckets are used to store images.
 
